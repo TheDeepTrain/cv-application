@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
+  min-height: 800px;
+  width: 800px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cv{
+  min-height: 800px;
+  width: 800px;
+  background-color: aliceblue;
+  display: none;
+  align-items: center;
+  flex-direction: column;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.space{
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+}
+#root{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.general{
+  width: 500px;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.general2{
+  width: 500px;
+  min-height: 125px;
   display: flex;
   flex-direction: column;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+input{
+  width: 600px;
+  margin: 8px;
+  border: none;
+  height: 30px;
+  border-bottom: 1px solid gray;
+  background-color: aliceblue;
+  font-size: 22px;
+}
+input:focus{
+  outline: none;
+}
+#date{
+  width: 300px;
+  margin: 10px;
+  padding: 5px;
+}
+.dates{
+  display: flex;
+}
+button{
+  width: 600px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  height: 30px;
+  border-radius: 15px;
+  font-size: 25px;
+}
+button:hover{
+  background-color: rgb(150, 155, 159);
+}
+.section{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.remove{
+  position:  absolute;
+  left: 1175px;
+  font-size: 36px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  width: 600px;
+  height: 100px;
+  border-radius: 15px;
+  margin: 10px;
+}
+#finish{
+  height: 75px;
+  margin: 15px;
+}
+.profile{
+  margin: 10px;
+  font-weight: 600;
+}
+.description{
+  height: 150px;
+  width: 500px;
+  margin: 10px;
+  word-wrap: break-word
 }
